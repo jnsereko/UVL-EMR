@@ -671,6 +671,18 @@ Merged to UVL-EMR `main` and verified on UAT. **Not in production.**
   `UVL_theatre_acts_596_20261112.zip`. The build now fails when an act the order search offers has
   no Odoo product (`scripts/check-procedure-billing.groovy`). Anaesthesia at 50% of the act, major
   or minor, and national codes are not part of this change. (#596)
+- **Maternity and neonatology acts from the hospital price list can be ordered and billed.** 22
+  acts of « TARIFICATION UVL » sections C « Actes de la maternité » and D « Actes de la
+  néonatologie » (« Accouchement avec forceps », « Cerclage du col utérin », « Soins du
+  nouveau-né », the newborn resuscitations, ...) are new Procedure concepts with a French and an
+  English name, members of « All procedures », so the « Actes » order search offers them. 10
+  tariff lines are 13 acts that already existed (GO401 delivery, GO101 caesarean, GO202 curettage,
+  GO106 hysterectomy, the IUD acts, ...) and were not duplicated. Each new act has an Odoo
+  product `init.<concept uuid>` in `product_variant/procedures-issue593.csv`, so an order reaches
+  the quotation; no `lst_price` column, the UVL team enters the tariff prices in Odoo. Maternity
+  drugs and lab tests are the pharmacy and laboratory catalogue items (product owner, 11 Nov
+  2026). OCL: uvl-custom `20261112-acts-596-593`, collection `uvl-maternity-acts` `20261112`,
+  shipped as `UVL_maternity_acts_593_20261112.zip`. (#593)
 
 ### Changed
 - **Doctor no longer holds `Delete Encounters`, `Delete Visits` or `Delete Observations`.** The
