@@ -1214,8 +1214,6 @@ Merged to UVL-EMR `main` and verified on UAT. **Not in production.**
     `docker exec <openmrs container> sh -c 'ls /openmrs/data/modules | grep stockmanagement'` must
     show only `stockmanagement-2.1.2-uvl2.omod`, and the OpenMRS log must show it started as version
     `2.1.2-uvl2`. Billing must still start (it needs stockmanagement >= 1.4.0).
-    show only `stockmanagement-2.1.2-uvl1.omod`, and the OpenMRS log must show it started as version
-    `2.1.2-uvl1`. Billing must still start (it needs stockmanagement >= 1.4.0).
 25. **#608, discharged patients' open visits:** after the deploy, run LIME-EMR-Tooling
     `e2e/prod-608-end-discharged-visits.sql` (local file, not in git) against the OpenMRS database,
     `@apply = 0` first. It ends the open visits whose latest Admission/Discharge is a Discharge, at
