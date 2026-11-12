@@ -841,7 +841,25 @@
         "number": "Numéro",
         "location": "Emplacement",
         "operationFilter": "Opération",
-        "noOperationsToDisplay": "Aucune opération de stock à afficher"
+        "noOperationsToDisplay": "Aucune opération de stock à afficher",
+        "destination": "Destination",
+        "enterRemarksPlaceholder": "Saisir des remarques...",
+        "uom": "Unité de mesure",
+        "pharmaceuticals": "Pharmaceutiques",
+        "nonPharmaceuticals": "Non pharmaceutiques",
+        "sourceRequired": "Source requise",
+        "statusNew": "Nouveau",
+        "itemsPerPage": "Éléments par page :",
+        "paginationItemRange": "{{min}}–{{max}} sur {{total}} éléments",
+        "paginationPageRange": "sur {{total}} pages",
+        "previousPage": "Page précédente",
+        "nextPage": "Page suivante",
+        "selectAll": "Tout sélectionner",
+        "itemSelected_one": "{{count}} élément sélectionné",
+        "itemSelected_other": "{{count}} éléments sélectionnés",
+        "itemsSelected_one": "{{count}} élément sélectionné",
+        "itemsSelected_other": "{{count}} éléments sélectionnés",
+        "noStockItemsToDisplay": "Aucun article de stock à afficher"
       }
     }
   },
